@@ -31,7 +31,7 @@ nmap -sV -O 192.168.175.129
 
 **Wazuh detection:** Network anomaly events logged from Windows-Victim agent. Reconnaissance activity visible in Security Events timeline.
 
-**Screenshot:** [Nmap scan results](screenshots/nmap-scan.png)
+**Screenshot:** [Nmap scan results](screenshots/nmap-scan.jpeg)
 
 ---
 
@@ -44,7 +44,7 @@ hydra -l administrator -P /usr/share/wordlists/rockyou.txt rdp://192.168.175.129
 
 **Wazuh detection:** 171 total alerts generated from Windows-Victim. The alert level evolution graph showed a clear spike at the exact moment the attack started. Wazuh automatically mapped activity to MITRE ATT&CK T1078 (Valid Accounts). Compliance check also triggered — Windows-Victim scored below 50% on the CIS Microsoft Windows 10 Enterprise Benchmark (Rule 19004, Level 7).
 
-**Screenshot:** [Brute force alert spike](screenshots/brute-force-spike.png)
+**Screenshot:** [Brute force alert spike](screenshots/brute-force-spike.jpeg)
 
 ---
 
@@ -61,7 +61,7 @@ run
 
 **Wazuh detection:** SMB connection attempt logged. Result demonstrates the importance of patch management — the same exploit would have succeeded against an unpatched Windows 7 or Server 2008 target.
 
-**Screenshot:** [EternalBlue attempt](screenshots/eternalblue.png)
+**Screenshot:** [EternalBlue attempt](screenshots/eternal-blue.jpeg)
 
 ---
 
@@ -83,14 +83,14 @@ run
 
 | Screenshot | Description |
 |---|---|
-| ![Dashboard](screenshots/wazuh-dashboard.png) | Wazuh dashboard with Windows-Victim active agent |
-| ![Nmap](screenshots/nmap-scan.png) | Nmap reconnaissance scan from Kali |
-| ![Events](screenshots/security-events.png) | Wazuh Security Events from Windows-Victim |
-| ![Spike](screenshots/brute-force-spike.png) | Alert spike during Hydra brute force attack |
-| ![MITRE](screenshots/mitre-alerts.png) | High severity alerts with MITRE ATT&CK mapping |
-| ![JSON](screenshots/alert-json.png) | Raw JSON alert detail from Windows-Victim |
-| ![EternalBlue](screenshots/eternalblue.png) | EternalBlue exploitation attempt |
-| ![High Severity](screenshots/high-severity.png) | High severity compliance and persistence alerts |
+| ![Dashboard](screenshots/wazuh-dashboard.jpeg) | Wazuh dashboard with Windows-Victim active agent |
+| ![Nmap](screenshots/nmap-scan.jpeg) | Nmap reconnaissance scan from Kali |
+| ![Events](screenshots/security-events.jpeg) | Wazuh Security Events from Windows-Victim |
+| ![Spike](screenshots/brute-force-spike.jpeg) | Alert spike during Hydra brute force attack |
+| ![MITRE](screenshots/mitre-alerts.jpeg) | High severity alerts with MITRE ATT&CK mapping |
+| ![JSON](screenshots/alert-json.jpeg) | Raw JSON alert detail from Windows-Victim |
+| ![EternalBlue](screenshots/eternal-blue.jpeg) | EternalBlue exploitation attempt |
+| ![High Severity](screenshots/high-severity.jpeg) | High severity compliance and persistence alerts |
 
 ## Environment Setup
 - Host OS: Windows 11
