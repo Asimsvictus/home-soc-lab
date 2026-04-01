@@ -83,11 +83,11 @@ run
 
 | Screenshot | Description |
 |---|---|
-| ![Dashboard](screenshots/wazuh-dashboard.jpeg) | Wazuh dashboard with Windows-Victim active agent |
+| ![Dashboard](screenshots/Wazuh-dashboard.jpeg) | Wazuh dashboard with Windows-Victim active agent |
 | ![Nmap](screenshots/nmap-scan.jpeg) | Nmap reconnaissance scan from Kali |
 | ![Events](screenshots/security-events.jpeg) | Wazuh Security Events from Windows-Victim |
 | ![Spike](screenshots/brute-force-spike.jpeg) | Alert spike during Hydra brute force attack |
-| ![MITRE](screenshots/mitre-alerts.jpeg) | High severity alerts with MITRE ATT&CK mapping |
+| ![Table](screenshots/alert-table.jpeg) | Alert detail table view |
 | ![JSON](screenshots/alert-json.jpeg) | Raw JSON alert detail from Windows-Victim |
 | ![EternalBlue](screenshots/eternal-blue.jpeg) | EternalBlue exploitation attempt |
 | ![High Severity](screenshots/high-severity.jpeg) | High severity compliance and persistence alerts |
